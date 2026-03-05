@@ -158,7 +158,7 @@ async def restart_handler(_, m):
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["Teddy"]) )
+@bot.on_message(filters.command(["mk"]) )
 async def txt_handler(bot: Client, m: Message):
     editable = await m.reply_text(f"**🔹Hi I am Poweful Sweet TXT Downloader📥 Bot.**\n🔹**Send me the TXT file and Just wait and Watch💸.**")
     input: Message = await bot.listen(editable.chat.id)
@@ -395,7 +395,7 @@ async def txt_handler(bot: Client, m: Message):
 
 # Advance
 
-@bot.on_message(filters.command(["Bear"]) )
+@bot.on_message(filters.command(["mk"]) )
 async def txt_handler(bot: Client, m: Message):
     editable = await m.reply_text(f"**🔹Hi I am Poweful Lovely TXT Downloader📥 Bot.**\n🔹**Send me the TXT file and Just wait and Watch🥂.**")
     input: Message = await bot.listen(editable.chat.id)
@@ -429,9 +429,9 @@ async def txt_handler(bot: Client, m: Message):
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
-    if raw_text0 == '/mahi':
+    if raw_text0 == '/mohit':
         b_name = file_name
-    else:
+    else:links.append(i.split(\"://\", 1))
         b_name = raw_text0
 
     await editable.edit("**Enter resolution.**\n Eg : 144, 240, 360, **480**, 720 or 1080😄.")
